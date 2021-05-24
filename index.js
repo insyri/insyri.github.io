@@ -17,3 +17,23 @@ function g() {
 };
 //update to be 60 fps
 g();
+
+function favicon() {
+    const f1 = document.querySelector("link#DT")
+    const f2 = document.querySelector("link#LT")
+
+    const m = window.matchMedia('(prefers-color-scheme:dark)')
+    function oU() {
+        if(m.matches){
+            f2.remove()
+            document.head.append(f1)
+        } else {
+            document.head.append(f2)
+            f1.remove();
+        }
+    }
+    matcher.addListener(oU);
+    oU();
+}
+
+favicon();
