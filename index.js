@@ -37,3 +37,7 @@ function favicon() {
 }
 
 favicon();
+
+document.addEventListener('scroll', function() {
+    window.scrollTo(0, window.scrollY)
+});
