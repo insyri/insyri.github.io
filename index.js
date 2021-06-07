@@ -18,6 +18,7 @@ function g() {
 //update to be 60 fps
 g();
 
+/*
 function favicon() {
     const f1 = document.querySelector("link#DT")
     const f2 = document.querySelector("link#LT")
@@ -32,12 +33,24 @@ function favicon() {
             f1.remove();
         }
     }
-    matcher.addListener(oU);
+    matcher.addListener(oU); //reference error, matcher not defined
     oU();
 }
 
 favicon();
+*/
+//purpose: make hexagon move after 5 secs of inactivity, left to later fix
+/*
+//idle = no motion/ last since moved (event)
+//when goes idle, start timer, if unidles, stop timer, start timer
 
-document.addEventListener('scroll', function() {
+//this is bullshit code, will fix later (why repeat window.addeventlistener)
+window.addEventListener('scroll', function() {
     window.scrollTo(0, window.scrollY)
+    console.log('scroll');
 });
+window.addEventListener('keydown', console.log('keydown'));
+window.addEventListener('mousedown', console.log('mousedown'));
+window.addEventListener('mousemove', console.log('mousemove'));
+window.addEventListener('touchstart', console.log('touchstart'));
+*/
