@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <p>
+        Paste in textbox, then press "Markdown to DokuWiki", then click "Copy".
+        </p>
+        <input type="text" id="text">
+        <button onclick="run()">Markdown to DokuWiki</button>
+        <br>
+        <input type="text" id="done" readonly>
+        <button onclick="copy()">Copy Text</button>
+    </p>
+</html>
+<script>
+function run(){
+    let noob = document.getElementById('done').value;
+    if(noob instanceof String){
+        noob = noob.split("\n")
+        if(noob instanceof Array){
+            noob.forEach(element => element)
+            let finished = noob.join("\n");
+        }
+    }
+}
+</script>
